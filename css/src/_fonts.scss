@@ -1,0 +1,31 @@
+
+
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('fonts/century-gothic-regular.eot');
+	src: url('fonts/century-gothic-regular.woff') format('woff'), 
+		url('fonts/century-gothic-regular.ttf') format('truetype'), 
+		url('fonts/century-gothic-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Century Gothic Bold';
+	src: url('fonts/century-gothic-bold.eot');
+	src: url('fonts/century-gothic-bold.woff') format('woff'), 
+		url('fonts/century-gothic-bold.ttf') format('truetype'), 
+		url('fonts/century-gothic-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@mixin font {
+	font-family: "Century Gothic", sans-serif;
+}
+
+@mixin font-bold {
+	font-family: "Century Gothic Bold", sans-serif;
+}
+

@@ -1,0 +1,103 @@
+
+
+footer {
+	background: $purple url(../img/bg-footer.png) top center no-repeat;
+	color: white;
+	padding: 20px 0;
+	position: relative;
+	@include clearfix;
+
+	&:before {
+		@include respond-to( 768px ) {
+			content: '';
+			background: url(../img/footer-gymnast-one.png) center center no-repeat;
+			position: absolute;
+			right: 100px;
+			bottom: 0;
+			width: 160px;
+			height: 43px;
+			transition: 300ms all ease-in-out;
+		}
+
+		@include respond-to( 1024px ) {
+			right: 200px;
+		}
+	}
+
+	.column {
+		padding: 0 20px;
+
+		@include respond-to( 768px ) {
+			float: left;
+			width: 17%;
+
+			&.wide {
+				width: 35%;
+				border-right: 2px solid white;
+				min-height: 130px;
+			}
+		}
+
+		@include respond-to( 1024px ) {
+			padding: 0 30px;
+		}
+	}
+	
+	h3 {
+		@include font;
+		font-size: 1.4em;
+		line-height: 1.4em;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	nav {
+		a {
+			display: block;
+			padding: 3px;
+		}
+	}
+
+	.social {
+		padding: 10px 0;
+		text-align: center;
+
+		a {
+			padding: 0 3px;
+		}
+
+		img {
+			display: inline-block;
+		}
+
+		@include respond-to( 768px ) {
+			padding: 0;
+			width: auto;
+			text-align: right;
+			position: absolute;
+			transition: 300ms all ease-in-out;
+			right: 30px;
+			bottom: 20px;
+
+			&:before {
+				content: '';
+				width: 90px;
+				height: 66px;
+				background: url(../img/footer-gymnast-two.png) center center no-repeat;
+				background-size: contain;
+				position: absolute;
+				top: -66px;
+				right: -10px;
+			}
+		}
+
+		@include respond-to( 1024px ) {
+			right: 50px;
+		}
+	}
+}
+

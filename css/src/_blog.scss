@@ -1,0 +1,65 @@
+
+
+.blog-list {
+	@include clearfix;
+	
+	.post {
+		padding: 15px 0;
+
+		img {
+			width: 15%;
+			float: left;
+			margin: 0 3% 10px 0;
+		}
+
+		.post-content {
+			width: 82%;
+			float: left;
+		}
+	}
+
+	@include respond-to( 768px ) {
+		.post {
+			width: 48%;
+			float: left;
+			margin-right: 4%;
+
+			&:nth-child( 2 ), &:nth-child( 4 ), &:nth-child( 6 ), &:nth-child( 8 ), &:nth-child( 10 ), {
+				margin-right: 0;
+			}
+
+			&:nth-child( 1 ), &:nth-child( 3 ), &:nth-child( 5 ), &:nth-child( 7 ), &:nth-child( 9 ), {
+				clear: left;
+			}
+		}
+	}
+
+}
+
+
+.pagination {
+	padding: 15px 0 30px;
+	text-align: center;
+	font-size: 15px;
+	line-height: 15px;
+	@include font-bold;
+
+	a {
+		padding: 7px 12px;
+		background: $grey;
+		color: white;
+		text-decoration: none;
+		display: inline-block;
+
+		&:hover {
+			background: lighten( $grey, 5% );
+		}
+	}
+
+	.current {
+		padding: 7px 12px;
+		display: inline-block;
+		background: lighten( $grey, 5% );
+	}
+}
+

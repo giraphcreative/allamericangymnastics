@@ -1,0 +1,122 @@
+
+
+.wrap {
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+
+.container {
+	max-width: 1150px;
+	margin: 0 auto;
+	box-shadow: 0 0 20px lighten( $grey, 20% );
+}
+
+
+.content {
+	background: white;
+
+	h1, h2, h3, h4, h5, h6 {
+		padding: 6px 0;
+	}
+}
+
+.content-narrow {
+	padding: 40px 20px 60px;
+	max-width: 850px;
+	margin: 0 auto;
+	@include clearfix;
+	@extend .content-style;
+}
+
+.content-extra-narrow {
+	padding: 40px 20px 60px;
+	max-width: 600px;
+	margin: 0 auto;
+	@include clearfix;
+	@extend .content-style;
+}
+
+.content-wide {
+	@include clearfix;
+	@extend .content-style;
+	padding: 40px 20px;
+
+	@include respond-to( 1024px ) {
+		padding: 40px;
+	}
+	
+	&.home iframe:first-child {
+		@include respond-to( 840px ) {
+			float: right;
+			margin: 20px 0 20px 5%;
+		}
+	}
+}
+
+.content-two-column .three-quarter {
+	@extend .content-style;
+}
+
+.fluid-width-video-wrapper {
+	margin: 15px 0;
+}
+
+
+.quarter, .third, .half, .two-third, .three-quarter {
+	padding: 20px;
+}
+
+@include respond-to( 768px ) {
+	.quarter, .third, .half, .two-third, .three-quarter {
+		float: left;
+
+		&.right {
+			float: right;
+		}
+	}
+
+	.quarter {
+		width: 23%;
+		margin: 0 1%;
+	}
+
+	.third {
+		width: 31%;
+		margin: 0 1%;
+	}
+
+	.two-third {
+		width: 65%;
+		margin: 0 1%;
+	}
+
+	.three-quarter {
+		width: 73%;
+		margin: 0 1%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+img.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+table {
+	width: 100%;
+
+	tr {
+		td {
+			vertical-align: top;
+			padding: 6px 10px;
+		}
+	}
+}
+
