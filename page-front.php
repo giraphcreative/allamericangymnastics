@@ -13,13 +13,13 @@ get_header();
 	<div class="wrap home-posts group">
 		<?php 
 		$my_query = "showposts=4";
-		$my_query = new WP_Query($my_query);
+		$my_query = new WP_Query( $my_query );
 		if ($my_query->have_posts()) : 
 			while ($my_query->have_posts()) : $my_query->the_post(); 
 				?>
-		<div class="post quarter">
-			<p class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-				<a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
+		<div class="post quarter">		
+			<a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
+			<p class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
 		</div>
 				<?php 
 			endwhile;
