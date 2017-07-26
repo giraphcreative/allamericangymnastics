@@ -50,7 +50,7 @@ function the_showcase() {
 			}
 		}
 
-		if ( $count > 1 ) { 
+		if ( $count >= 2 ) { 
 			?>
 			<div class="showcase-nav">
 				<a class="previous">Previous</a>

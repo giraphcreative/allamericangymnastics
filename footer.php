@@ -36,7 +36,7 @@
 				</nav>
 			</div>
 			<div class="column social">
-				<a href="https://twitter.com/memberloyalty" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png"></a>
+				<a href="https://www.facebook.com/All-American-Gymnastics-177410759053056/" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png"></a>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
