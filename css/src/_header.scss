@@ -68,59 +68,6 @@ header {
 		}
 	}
 
-	nav.aux-menu {
-
-		ul {
-			margin-bottom: 10px;
-			@include clearfix;
-			display: none;
-
-			@include respond-to( $menu-bp ) {
-				display: block;
-			}
-
-			li {
-				a {
-					display: block;
-					padding: 10px 15px;
-					background: $purple url(../img/bg-button-star.png) left center no-repeat;
-					color: white;
-					text-transform: uppercase;
-					text-align: center;
-					text-decoration: none;
-				}
-
-				&:first-child a {
-					background-color: $red;
-				}
-
-				@include respond-to( $menu-bp ) {
-					float: left;
-
-					a {
-						display: inline-block;
-						margin-right: 10px;
-						padding: 12px 20px;
-						line-height: 28px;
-						opacity: 1;
-						transition: 300ms opacity ease-in-out;
-
-						&:hover {
-							opacity: .8;
-						}
-					}
-				}
-			}
-		}
-
-		@include respond-to( $menu-bp ) {
-			position: absolute;
-			top: 0;
-			right: 0;
-			height: 50px;
-		}
-	}
-
 	nav.main-menu {
 		@include clearfix;
 		position: relative;
