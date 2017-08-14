@@ -81,18 +81,26 @@ header {
 		}
 
 		&:before {
+			position: absolute;
 			display: none;
 			content: "";
 			background: url(../img/header-gymnasts.png) bottom center no-repeat;
 			background-size: contain;
 
 			@include respond-to( 875px ) {
-				display: block;
 				position: absolute;
+				display: block;
 				top: -105px;
 				left: 160px;
 				height: 105px;
 				width: 300px;
+			}
+
+			@include respond-to( 960px ) {
+				top: -120px;
+				left: 80px;
+				height: 120px;
+				width: 320px;
 			}
 
 			@include respond-to( 1070px ) {
