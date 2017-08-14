@@ -35,10 +35,6 @@
 			Call us today at <a href="tel:804.240.5954">804.240.5954</a>
 		</div>
 
-		<nav class="aux-menu">
-			<?php wp_nav_menu( array( 'theme_location' => 'aux-menu', 'menu_class' => 'nav-menu' ) ); ?>
-		</nav>
-
 		<button class="menu-toggle"><i class="fa fa-bars"></i></button>
 		<nav role="navigation" class="main-menu">
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
