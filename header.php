@@ -32,7 +32,9 @@
 		</div>
 		
 		<div class="contact">
-			Call us today at <a href="tel:804.240.5954">804.240.5954</a>
+			Call us today at <a href="tel:804.240.5954">804.240.5954</a><br />
+			<span><a href="https://www.google.com/maps/place/All+American+Gymnastics/@37.7465622,-77.4667827,17z/data=!4m13!1m7!3m6!1s0x89b13be14b6e2617:0xf26dde5791738688!2s323+Business+Ln,+Ashland,+VA+23005!3b1!8m2!3d37.746558!4d-77.464594!3m4!1s0x89b13c30d40fe7cb:0x16c7a685f90d0ae1!8m2!3d37.746558!4d-77.4645939">323-A Business Lane,<br>
+			Ashland, VA 23005</a></span>
 		</div>
 
 		<button class="menu-toggle"><i class="fa fa-bars"></i></button>

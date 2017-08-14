@@ -29,9 +29,10 @@ header {
 			@include font-bold;
 			display: block;
 			position: absolute;
-			top: 65px;
+			top: 35px;
 			right: 35px;
 			color: lighten( $grey-dark, 10% );
+			text-align: center;
 
 			a {
 				color: lighten( $grey-dark, 10% );
@@ -41,6 +42,11 @@ header {
 					text-decoration: none;
 					color: lighten( $grey-dark, 20% );
 				}
+			}
+
+			span {
+				display: block;
+				padding-top: 5px;
 			}
 		}
 	}
