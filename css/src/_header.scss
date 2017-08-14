@@ -91,21 +91,21 @@ header {
 				position: absolute;
 				display: block;
 				top: -105px;
-				left: 160px;
+				right: 210px;
 				height: 105px;
 				width: 300px;
 			}
 
 			@include respond-to( 960px ) {
 				top: -120px;
-				left: 80px;
+				right: 250px;
 				height: 120px;
 				width: 320px;
 			}
 
 			@include respond-to( 1070px ) {
 				top: -120px;
-				left: 30px;
+				right: 300px;
 				height: 120px;
 				width: 320px;
 			}
